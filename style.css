@@ -1,0 +1,197 @@
+
+
+body {
+    background-image: 
+        linear-gradient(
+            to bottom, 
+            rgba(255, 255, 255, 0) 25%, /* No gradient at the top part */
+            rgba(255, 255, 255, 0.5) 35%, /* Light overlay in the middle */
+            rgba(255, 255, 255, 0) 55%   /* Fade back to no gradient at the bottom */
+        ),
+        url(background.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+  
+}
+
+ul {
+    display: flex;
+    gap: 50px; /* Space between the items */
+}
+
+
+ul li{
+    list-style: none;
+    margin-top: -10px;
+    font-size: 19px;
+   
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #0b4066;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #df7008
+}
+
+.page-title {
+    text-align: center;
+    font-size: 32px;  /* Adjust as needed */
+    color: #0b4066;   
+    margin-top: 20px; /* Add space above the title */
+}
+
+
+.about-content{
+    
+        text-align: center;  
+        font-weight: bold;     
+        margin: 0 auto;           
+        padding: 0 20px;          /* Adds space on left and right */
+        max-width: 800px;         
+        color: #222222;           /* text color - contrast to light backgraound */
+        line-height: 1.6;         
+    }
+
+
+
+
+        .search-box-container {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .search-box-container input[type="email"] {
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            width: 200px;
+        }
+        .search-box-container input[type="submit"] {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+        body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    H1{
+   float: right;
+   text-align: center;
+    margin-left:0px;
+    margin-top:-30px;
+    color: black;
+    width: 100%;
+    background: #2372;
+    font-size: 35px;
+    line-height:120px;
+    font-weight:bold;
+ }
+
+   
+   
+
+
+
+
+
+
+
+
+#css_for_dropdown
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 5px 0; /* Small padding to space the links out */
+  border-radius: 4px; /* Optional: adds rounded corners */
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
