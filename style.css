@@ -24,13 +24,15 @@ body {
   
 }
 
-ul {
+.menu ul {
     display: flex;
     gap: 50px; /* Space between the items */
+    padding-left: 0;
 }
 
 
-ul li{
+
+.menu ul li{
     list-style: none;
     margin-top: -10px;
     font-size: 19px;
@@ -38,7 +40,7 @@ ul li{
 }
 
 
-ul li a{
+.menu ul li a{
     text-decoration: none;
     color: #0b4066;
     font-family: Arial;
@@ -46,7 +48,7 @@ ul li a{
     transition: 0.4s ease-in-out;
 }
 
-ul li a:hover{
+.menu ul li a:hover{
     color: #df7008
 }
 
@@ -68,6 +70,24 @@ ul li a:hover{
         color: #222222;           /* text color - contrast to light backgraound */
         line-height: 1.6;         
     }
+
+
+
+.about-content ul {
+
+      display: block;  
+      padding-left: 20px;  
+      list-style-type: disc; 
+
+  }
+  
+  
+.about-content ul li {
+
+    margin: 5px 0; /* Add spacing between items */
+    list-style: disc; 
+
+}
 
 
 
