@@ -1,4 +1,4 @@
-alert("JavaScript file is linked!");
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const menuIcon = document.querySelector('.menu-icon');
