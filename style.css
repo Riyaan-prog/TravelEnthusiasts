@@ -240,8 +240,8 @@ body {
 /* Menu Content */
 .menu-content {
     position: fixed;
-    top: 5;
-    left: -300px;
+    top: 0;
+    left: -350px;
     width: 300px;
     height: 100%;
     background-color: #b0d1f2;
