@@ -1,8 +1,13 @@
-function toggleMenu() {
-    onsole.log("Hamburger menu clicked!"); 
-    document.querySelector('.menu-content').classList.toggle('open');
-}
+alert("JavaScript file is linked!");
 
-document.querySelector('.menu-icon').addEventListener('click', toggleMenu);
+document.addEventListener("DOMContentLoaded", () => {
+    const menuIcon = document.querySelector('.menu-icon');
+    const menuContent = document.querySelector('.menu-content');
+
+    menuIcon.addEventListener('click', () => {
+        menuContent.classList.toggle('open');
+    });
+});
+
 
 
