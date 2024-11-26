@@ -174,7 +174,7 @@ body {
 .centrebtn {
     display: flex;
     justify-content: center;
-    align-item: center;
+    align-items: center;
     height: 100vh;
 }
     
