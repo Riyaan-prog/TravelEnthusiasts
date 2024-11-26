@@ -170,6 +170,11 @@ body {
 
 #css_for_dropdown
 
+html, body {
+    height: 100%;
+    margin:0;
+}
+
 /* Dropdown Button */
 .centrebtn {
     display: flex;
