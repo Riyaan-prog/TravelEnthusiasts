@@ -3,34 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Page</title>
+    <title>Travel Hackers</title>
    <link rel="stylesheet" type="text/css"href="style.css">  
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
 
         <header>
-            <h1>TRAVEL HACKERS</h1>
+            <h1>TravelHackers<ion-icon class="globe" name="earth-outline"></ion-icon></h1>
 
 
         </header>
+
+        <button id="btnScroll">
+
+          <i class="material-icons">keyboard_double_arrow_up</i>
+  
+          </button>
         <div class="menu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
             <li><a href="newsletter.html">Newsletter</a></li>
         </ul>
 
         </div>
-     <h2 class="page-title">Contact Page</h2>
+     <h2 class="page-title">Contact</h2>
+
+     
 
      <div class="about-content">
             
-        <!-- write contents of page in here */-->
+        <h2>Travel Hackers Team</h2>
+
+        </div>
+
+        <div class="contact">
+
+        <h3>Address</h3>
+
+        <ul>
+            <li>420 Foden High Street</li>
+            <li>Streatham</li>
+            <li>SE14 5RA</li>
+        </ul>
+
+        
+
+        <h3>Telephone</h3>
+
+        <h3> 0208 5162 5880</h3>
+
+        <h3>Email</h3>
+
+        <h3>TravelHackers@fr.org</h3>
+
+        <h3>Social Media</h3>
+
+        <br>
 
 
      </div>
+
+     <div class="socials">
+
+     <a class="social-icon" href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+
+     <a class="social-icon" href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+
+     <a class="social-icon" href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+
+     <a class="social-icon" href="https://www.x.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+
+     </div>
+
+     <div class="business-hours">
+        <h3>Opening Hours</h3>
+        <ul>
+          <li><span class="day">Monday</span><span class="time">9am - 5pm</span></li>
+          <li><span class="day">Tuesday</span><span class="time">9am - 5pm</span></li>
+          <li><span class="day">Wednesday</span><span class="time">9am - 5pm</span></li>
+          <li><span class="day">Thursday</span><span class="time">9am - 5pm</span></li>
+          <li><span class="day">Friday</span><span class="time">9am - 8pm</span></li>
+          <li><span class="day">Saturday</span><span class="time">9am - 3pm</span></li>
+          <li><span class="day">Sunday</span><span class="time">Closed</span></li>
+        </ul>
+      </div>
+
+
+      <div class="container">
+        <form>
+          <h1>Contact Us</h1>
+          <input type="text" id="firstName" placeholder="First Name *" required />
+          <input type="text" id="lastName" placeholder="Last Name *" required />
+          <input type="email" id="email" placeholder="Email *" required />
+          <input type="text" id="mobile" placeholder="Mobile *" required />
+
+          <h4>How should we contact you?</h4>
+          <label>
+           <input type="checkbox" id="contactEmail" />
+              Email
+             </label>
+              <label>
+           <input type="checkbox" id="contactMobile" />
+            Mobile
+           </label>
+          
+          <h4>Type Your Query Here...</h4>
+          <textarea required></textarea>
+          <input type="submit" value="Send" id="button" />
+        </form>
+      </div>
+
+      <script>
+
+        const btnScroll = document.querySelector("#btnScroll");
+    
+        btnScroll.addEventListener("click" , function () {
+    
+            window.scrollTo(0, 0);
+               
+    
+    
+        });
+    
+    
+    </script>
+
+
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    
 
  </body>
