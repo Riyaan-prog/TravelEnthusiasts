@@ -1,6 +1,8 @@
 
 
 body {
+    margin: 0;
+    padding: 0;
     background-image: 
         linear-gradient(
             to bottom, 
@@ -18,7 +20,7 @@ body {
 }
 
 header {
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: transparent;
     height: auto;
@@ -27,7 +29,7 @@ header {
 }
 
 .menu {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;
