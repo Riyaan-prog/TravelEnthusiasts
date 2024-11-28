@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: #b0d1f2;
     height: 116px;
