@@ -252,7 +252,7 @@ img {
   align-items: center;          /* Vertically align items */
   justify-content: center;      /* Center items horizontally */                    /* Space between dropdown and search bar */
   width: 100%;                  /* Full width */
-  max-width: 800px; 
+  max-width: 850px; 
   height: 50px;
            
   margin: 0 auto;               /* Center the container on the page */
