@@ -264,8 +264,10 @@ img {
 
 /* Dropdown */
 .dropdown {
-  position: relative;
-  width: 250px; /* Adjust based on your design */
+  position: absolute;
+  left: 350px
+  top: 587px;
+  width: 275px; /* Adjust based on your design */
   height: 100%; /* Match the parent height */
   background-color: #0b4066;
   color: white;
@@ -277,8 +279,7 @@ img {
   cursor: pointer;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
+  box-sizing: border-box;  
 }
 
 .dropdown-header {
