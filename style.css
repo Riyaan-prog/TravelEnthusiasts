@@ -42,6 +42,8 @@ header {
 
 .menu ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 80px; 
     width: 100%;
     background-color: #edf9fe;
@@ -60,7 +62,6 @@ header {
 
 .menu ul li a{
     display: block;
-    padding: 10px 20px
     text-decoration: none;
     color: #0b4066;
     font-family: Arial, sans-serif;
