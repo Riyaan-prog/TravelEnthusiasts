@@ -260,6 +260,8 @@ img {
   background-color: transparent;    /* Optional: Background color */
   border-radius: 25px;          /* Optional: Rounded edges */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+
+  position: relative;   
   top: 140px;   
 }
 
