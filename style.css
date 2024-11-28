@@ -264,9 +264,7 @@ img {
 
 /* Dropdown */
 .dropdown {
-  position: absolute;
-  left: 350px
-  top: 587px;
+  position: relative;
   width: 275px; /* Adjust based on your design */
   height: 100%; /* Match the parent height */
   background-color: #0b4066;
@@ -280,6 +278,7 @@ img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
+  top: 100px;  
 }
 
 .dropdown-header {
