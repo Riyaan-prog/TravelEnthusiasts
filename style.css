@@ -230,11 +230,11 @@ img {
     
     H1{
         display: block;
+        width: 100%;
         text-align: center;
         margin:0px;
         margin-top:-30px;
-        color:#0b4066;
-        width: 100%;        
+        color:#0b4066;               
         background-color: #b9cbe4;
         font-size: 35px;
         line-height:116px;
