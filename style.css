@@ -259,10 +259,11 @@ img {
 }
 
 .home-title {
+    display: none;
     text-align: right;
     font-size: 32px;  /* Adjust as needed */
     color: #0b4066;   
-    margin-top: 300px; /* Add space above the title */
+    margin-top: 0px; /* Add space above the title */
 }
 
  .search-bar-container {
