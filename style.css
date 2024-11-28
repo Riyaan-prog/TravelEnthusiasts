@@ -20,6 +20,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    background-color: #b0d1f2;
 }
 
 .menu {
