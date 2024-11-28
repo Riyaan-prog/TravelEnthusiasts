@@ -22,7 +22,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+    background-color: #b0d1f2;
     height: auto;
     margin: 0;
     padding: 10px;
