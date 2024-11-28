@@ -259,7 +259,7 @@ img {
 }
 
 .home-title {
-    text-align: center;
+    text-align: right;
     font-size: 32px;  /* Adjust as needed */
     color: #0b4066;   
     margin-top: 20px; /* Add space above the title */
