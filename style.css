@@ -247,6 +247,25 @@ img {
         font-weight:bold;
  }
 
+
+
+.parent-container {
+  display: flex;                
+  flex-direction: column;         
+  align-items: center;          
+  width: 100%;                  
+  max-width: 850px;             
+  height: auto;                 
+  margin: 0 auto;               
+}
+
+.home-title {
+    text-align: center;
+    font-size: 32px;  /* Adjust as needed */
+    color: #0b4066;   
+    margin-top: 20px; /* Add space above the title */
+}
+
  .search-bar-container {
   display: flex;                /* Flexbox layout for horizontal alignment */
   align-items: center;          /* Vertically align items */
