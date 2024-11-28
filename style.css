@@ -21,7 +21,9 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #b9cbe4;
-    height: 116px
+    height: 116px;
+    margin: 0;
+    padding: 0;
 }
 
 .menu {
@@ -29,8 +31,8 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px;
-    background-color: #b9cbe4
+    height: 100%;
+    background-color: #b9cbe4;
     margin: 0;
     padding: 0;
 }
@@ -39,7 +41,8 @@ header {
     display: flex;
     gap: 80px; /* Space between the items */
     padding-left: 0;
-    margin: 0
+    margin: 0;
+    background-color: #b9cbe4;    
 }
 
 
@@ -48,7 +51,7 @@ header {
     list-style: none;
     margin-top: -10px;
     font-size: 20px;
-   
+    background-color: #b9cbe4;   
 }
 
 
@@ -69,6 +72,7 @@ header {
     font-size: 32px;  /* Adjust as needed */
     color: #0b4066;   
     margin-top: 20px; /* Add space above the title */
+    background-color: #b9cbe4;
 }
 
 
