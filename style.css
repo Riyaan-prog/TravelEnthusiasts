@@ -41,8 +41,7 @@ header {
     display: flex;
     gap: 80px; /* Space between the items */
     padding-left: 0;
-    margin: 0;
-    background-color: #b9cbe4;    
+    margin: 0;    
 }
 
 
@@ -50,8 +49,7 @@ header {
 .menu ul li{
     list-style: none;
     margin-top: -10px;
-    font-size: 20px;
-    background-color: #b9cbe4;   
+    font-size: 20px;   
 }
 
 
@@ -72,7 +70,6 @@ header {
     font-size: 32px;  /* Adjust as needed */
     color: #0b4066;   
     margin-top: 20px; /* Add space above the title */
-    background-color: #b9cbe4;
 }
 
 
