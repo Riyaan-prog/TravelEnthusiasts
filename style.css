@@ -251,11 +251,15 @@ img {
 
 .parent-container {
   display: flex;                
-  flex-direction: column;                  
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+  gap: 20px;  
   width: 100%;                  
   max-width: 850px;             
   height: auto;                 
-  margin: 0 auto;   
+  margin: 0 auto; 
+  padding: 20px  
 }
 
 .home-title {
@@ -268,8 +272,10 @@ img {
 
  .search-bar-container {
   display: flex;
+  flex-direction: row;
   align-items: center;          
-  justify-content: center;      
+  justify-content: space-between;
+  gap: 10px;   
   width: 100%;                 
   max-width: 850px; 
   height: 50px;
@@ -313,6 +319,7 @@ img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
+  z-index: 10;  
   
 }
 
