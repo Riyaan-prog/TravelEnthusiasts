@@ -75,9 +75,9 @@ header {
 
 .page-title {
     text-align: center;
-    font-size: 32px;  /* Adjust as needed */
+    font-size: 32px;  
     color: #0b4066;   
-    margin-top: 20px; /* Add space above the title */
+    margin-top: 20px; 
 }
 
 
@@ -86,9 +86,9 @@ header {
         text-align: center;  
         font-weight: 500;     
         margin: 0 auto;           
-        padding: 0 20px;          /* Adds space on left and right */
+        padding: 0 20px;          
         max-width: 800px;         
-        color: #222222;           /* text color - contrast to light backgraound */
+        color: #222222;           
         line-height: 1.6;         
     }
 
@@ -261,42 +261,48 @@ img {
 .home-title {
     display: none;
     text-align: right;
-    font-size: 32px;  /* Adjust as needed */
+    font-size: 32px;  
     color: #0b4066;   
-    margin-top: 0px; /* Add space above the title */
+    margin-top: 0px; 
 }
 
  .search-bar-container {
-  display: flex;                /* Flexbox layout for horizontal alignment */
-  align-items: center;          /* Vertically align items */
-  justify-content: center;      /* Center items horizontally */                    /* Space between dropdown and search bar */
-  width: 100%;                  /* Full width */
+  display: flex;                
+  align-items: center;          
+  justify-content: center;      
+  width: 100%;                 
   max-width: 850px; 
   height: 50px;
            
-  margin: 0 auto;               /* Center the container on the page */
-  padding: 0;                /* Add some padding */
-  background-color: transparent;    /* Optional: Background color */
-  border-radius: 25px;          /* Optional: Rounded edges */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+  margin: 0 auto;               
+  padding: 0;                
+  background-color: transparent;    
+  border-radius: 25px;          
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 
   position: relative;   
   top: 200px;  
   left: 140px;   
 }
 
+.home-about-content {
+    display: relative;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
 /* Dropdown */
 .dropdown {
   position: relative;
-  width: 275px; /* Adjust based on your design */
-  height: 100%; /* Match the parent height */
+  width: 275px; 
+  height: 100%; 
   background-color: #0b4066;
   color: white;
   display: flex;
   align-items: center;
-  border-top-left-radius: 25px; /* Round the top-left corner */
-  border-bottom-left-radius: 25px; /* Round the bottom-left corner */
-  border-right: none; /* Remove the right border to merge with the search bar */
+  border-top-left-radius: 25px; 
+  border-bottom-left-radius: 25px; 
+  border-right: none; 
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -318,30 +324,30 @@ img {
 }
 
 .dropdown:hover .dropdown-header {
-  color: #df7008; /* Change color on hover (e.g., orange) */
+  color: #df7008; 
 }
 
 .chevron {
-  font-size: 1rem; /* Adjust chevron size */
-  pointer-events: none; /* Prevent interaction */
-  margin-left: -15px; /* Push chevron to the far-right */
-  display: inline-block; /* Ensure it's aligned properly */
+  font-size: 1rem; 
+  pointer-events: none; 
+  margin-left: -15px; 
+  display: inline-block; 
   transition: transform 0.3s ease;
 }
 
 .chevron span {
-  font-size: 1.2rem; /* Adjust size of the chevron */
+  font-size: 1.2rem; 
   color: white;
   transition: color 0.2s ease;
 }
 
 .dropdown.active .chevron {
-  transform: rotate(180deg); /* Chevron points up */
+  transform: rotate(180deg); 
   
 }
 
 .dropdown:hover .chevron span {
-  color: #df7008; /* Change color of chevron on hover (e.g., orange) */
+  color: #df7008; 
 }
 
 .dropdown-list {
@@ -354,10 +360,10 @@ img {
   margin: 0;
   padding: 0;
   border-radius: 20px;
-  visibility: hidden; /* Initially hide the dropdown */
-  opacity: 0; /* Initially hide the dropdown (make it transparent) */
-  transform: translateY(-10px); /* Initially move the dropdown up */
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Transition for smooth animation */
+  visibility: hidden; 
+  opacity: 0; 
+  transform: translateY(-10px); 
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; 
   box-sizing: border-box;
 }
 
@@ -380,25 +386,24 @@ img {
 }
 
 .dropdown-list-item a {
-  text-decoration: none; /* Remove underlining */
-  color:  #0b4066;         /* Set text color to black */
+  text-decoration: none;
+  color:  #0b4066;         
 }
 
 .dropdown-list-item a:hover {
-  color: #df7008; /* Optional: Add a hover color for the links (green here) */
-}
+  color: #df7008; 
 
 .dropdown.active .dropdown-list {
-  visibility: visible; /* Show the dropdown */
-  opacity: 1; /* Make the dropdown opaque */
-  transform: translateY(0); /* Move the dropdown to its original position */
+  visibility: visible; 
+  opacity: 1; 
+  transform: translateY(0);
  
 }
 
 
 /* Search Box */
 .search-box {
-  flex: 1;                      /* Take remaining space */
+  flex: 1;                      
   display: flex;
   align-items: center;
   height: 100%;
@@ -409,9 +414,9 @@ img {
 
 .search-box input {
   width: 100%;  
-  height: 100%;               /* Full width of container */             
+  height: 100%;                 
   border: none;
-  padding: 0 20px;       /* Border styling */
+  padding: 0 20px;       
   font-size: 1rem;  
   outline: none; 
   box-sizing: border-box;        
@@ -504,11 +509,11 @@ img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  border-radius: 50%; /* Circular checkbox */
+  border-radius: 50%; 
   background-color: #fff;
   border: 2px solid #0b4066;
   cursor: pointer;
-  vertical-align: middle; /* Align with the label text */
+  vertical-align: middle; 
   transition: background-color 0.2s;
 }
 
