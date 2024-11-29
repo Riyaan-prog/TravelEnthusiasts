@@ -279,8 +279,10 @@ img {
   background-color: transparent;    /* Optional: Background color */
   border-radius: 25px;          /* Optional: Rounded edges */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
-   
-}
+
+  position: relative;   
+  top: 200px;  
+  }
 
 /* Dropdown */
 .dropdown {
@@ -298,6 +300,8 @@ img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
+
+
   
 }
 
