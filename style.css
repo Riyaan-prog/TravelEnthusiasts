@@ -258,7 +258,7 @@ img {
   margin: 0 auto;   
 }
 
-#home-title {
+.home-title {
     display: none;
     text-align: right;
     font-size: 32px;  /* Adjust as needed */
@@ -659,15 +659,6 @@ img {
 }
 
 
-.homep-content {
-    text-align: center;
-    font-weight: 500;
-    margin: 20px auto;
-    padding: 0 20px;
-    max-width: 800px;
-    color: #222222;
-    line-height: 1.6;
-}
 
 
 
