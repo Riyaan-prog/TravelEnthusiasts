@@ -23,7 +23,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    width: 100%;
+    width: 100%
     height: 116px;
     margin: 0 auto;
     padding: 0;
@@ -75,9 +75,9 @@ header {
 
 .page-title {
     text-align: center;
-    font-size: 32px;  
+    font-size: 32px;  /* Adjust as needed */
     color: #0b4066;   
-    margin-top: 20px; 
+    margin-top: 20px; /* Add space above the title */
 }
 
 
@@ -86,9 +86,9 @@ header {
         text-align: center;  
         font-weight: 500;     
         margin: 0 auto;           
-        padding: 0 20px;          
+        padding: 0 20px;          /* Adds space on left and right */
         max-width: 800px;         
-        color: #222222;           
+        color: #222222;           /* text color - contrast to light backgraound */
         line-height: 1.6;         
     }
 
@@ -251,75 +251,56 @@ img {
 
 .parent-container {
   display: flex;                
-  flex-direction: column;  
-  align-items: center;
-  justify-content: center;
-  gap: 20px;  
+  flex-direction: column;                  
   width: 100%;                  
   max-width: 850px;             
   height: auto;                 
-  margin: 0 auto; 
-  padding: 20px  
+  margin: 0 auto;   
 }
 
 .home-title {
     display: none;
     text-align: right;
-    font-size: 32px;  
+    font-size: 32px;  /* Adjust as needed */
     color: #0b4066;   
-    margin-top: 0px; 
+    margin-top: 0px; /* Add space above the title */
 }
 
  .search-bar-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;          
-  justify-content: space-between;
-  gap: 10px;   
-  width: 100%;                 
+  display: flex;                /* Flexbox layout for horizontal alignment */
+  align-items: center;          /* Vertically align items */
+  justify-content: center;      /* Center items horizontally */                    /* Space between dropdown and search bar */
+  width: 100%;                  /* Full width */
   max-width: 850px; 
   height: 50px;
            
-  margin: 0 auto;               
-  padding: 0;                
-  background-color: transparent;    
-  border-radius: 25px;          
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin: 0 auto;               /* Center the container on the page */
+  padding: 0;                /* Add some padding */
+  background-color: transparent;    /* Optional: Background color */
+  border-radius: 25px;          /* Optional: Rounded edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
 
   position: relative;   
   top: 200px;  
   left: 140px;   
 }
 
-.home-about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 850px;
-    margin-top: 20px;
-    padding: 0;
-}
-
-
 /* Dropdown */
 .dropdown {
   position: relative;
-  width: 275px; 
-  height: 100%; 
+  width: 275px; /* Adjust based on your design */
+  height: 100%; /* Match the parent height */
   background-color: #0b4066;
   color: white;
   display: flex;
   align-items: center;
-  border-top-left-radius: 25px; 
-  border-bottom-left-radius: 25px; 
-  border-right: none; 
+  border-top-left-radius: 25px; /* Round the top-left corner */
+  border-bottom-left-radius: 25px; /* Round the bottom-left corner */
+  border-right: none; /* Remove the right border to merge with the search bar */
   cursor: pointer;
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
-  z-index: 10;  
   
 }
 
@@ -337,29 +318,30 @@ img {
 }
 
 .dropdown:hover .dropdown-header {
-  color: #df7008; 
+  color: #df7008; /* Change color on hover (e.g., orange) */
 }
 
 .chevron {
-  font-size: 1rem; 
-  pointer-events: none; 
-  margin-left: -15px; 
-  display: inline-block; 
+  font-size: 1rem; /* Adjust chevron size */
+  pointer-events: none; /* Prevent interaction */
+  margin-left: -15px; /* Push chevron to the far-right */
+  display: inline-block; /* Ensure it's aligned properly */
   transition: transform 0.3s ease;
 }
 
 .chevron span {
-  font-size: 1.2rem; 
+  font-size: 1.2rem; /* Adjust size of the chevron */
   color: white;
   transition: color 0.2s ease;
 }
 
 .dropdown.active .chevron {
-  transform: rotate(180deg); 
+  transform: rotate(180deg); /* Chevron points up */
+  
 }
 
 .dropdown:hover .chevron span {
-  color: #df7008; 
+  color: #df7008; /* Change color of chevron on hover (e.g., orange) */
 }
 
 .dropdown-list {
@@ -372,10 +354,10 @@ img {
   margin: 0;
   padding: 0;
   border-radius: 20px;
-  visibility: hidden; 
-  opacity: 0; 
-  transform: translateY(-10px); 
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; 
+  visibility: hidden; /* Initially hide the dropdown */
+  opacity: 0; /* Initially hide the dropdown (make it transparent) */
+  transform: translateY(-10px); /* Initially move the dropdown up */
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Transition for smooth animation */
   box-sizing: border-box;
 }
 
@@ -398,23 +380,25 @@ img {
 }
 
 .dropdown-list-item a {
-  text-decoration: none;
-  color:  #0b4066;         
+  text-decoration: none; /* Remove underlining */
+  color:  #0b4066;         /* Set text color to black */
 }
 
 .dropdown-list-item a:hover {
-  color: #df7008; 
+  color: #df7008; /* Optional: Add a hover color for the links (green here) */
+}
 
 .dropdown.active .dropdown-list {
-  visibility: visible; 
-  opacity: 1; 
-  transform: translateY(0);
+  visibility: visible; /* Show the dropdown */
+  opacity: 1; /* Make the dropdown opaque */
+  transform: translateY(0); /* Move the dropdown to its original position */
+ 
 }
 
 
 /* Search Box */
 .search-box {
-  flex: 1;                      
+  flex: 1;                      /* Take remaining space */
   display: flex;
   align-items: center;
   height: 100%;
@@ -425,9 +409,9 @@ img {
 
 .search-box input {
   width: 100%;  
-  height: 100%;                 
+  height: 100%;               /* Full width of container */             
   border: none;
-  padding: 0 20px;       
+  padding: 0 20px;       /* Border styling */
   font-size: 1rem;  
   outline: none; 
   box-sizing: border-box;        
@@ -520,11 +504,11 @@ img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  border-radius: 50%; 
+  border-radius: 50%; /* Circular checkbox */
   background-color: #fff;
   border: 2px solid #0b4066;
   cursor: pointer;
-  vertical-align: middle; 
+  vertical-align: middle; /* Align with the label text */
   transition: background-color 0.2s;
 }
 
