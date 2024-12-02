@@ -1,4 +1,5 @@
-/*Background Image*/
+
+
 body {
     margin: 0;
     padding: 0;
@@ -18,24 +19,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
-
-
-/* Website Title*/
 header {
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    width: 100%;
+    width: 100%
     height: 116px;
     margin: 0 auto;
     padding: 0;
 }
 
-
-
-
-/* Horizontal Menu*/
 .menu {
     display: flex;
     justify-content: center;
@@ -58,11 +51,14 @@ header {
     margin: 0;    
 }
 
+
+
 .menu ul li{
     list-style: none;
     margin-top: 0px;
     font-size: 20px;   
 }
+
 
 .menu ul li a{
     display: block;
@@ -77,48 +73,52 @@ header {
     color: #df7008;
 }
 
-
-
-
-/* Page Title*/
 .page-title {
     text-align: center;
-    font-size: 32px;  
+    font-size: 32px;  /* Adjust as needed */
     color: #0b4066;   
-    margin-top: 20px; 
+    margin-top: 20px; /* Add space above the title */
 }
 
 
-
-
-/*Page Contents*/
 .about-content{
+    
         text-align: center;  
         font-weight: 500;     
         margin: 0 auto;           
-        padding: 0 20px;         
+        padding: 0 20px;          /* Adds space on left and right */
         max-width: 800px;         
-        color: #0b4066;           
+        color: #222222;           /* text color - contrast to light backgraound */
         line-height: 1.6;         
-}
+    }
+
+
+
 
 .about-content ul {
+
       display: block;  
       padding-left: 20px;  
-}
-   
+       
+
+  }
+  
+  
 .about-content ul li {
-    margin: 5px 0; 
+
+    margin: 5px 0; /* Add spacing between items */
     list-style: none; 
+
 }
 
-.contact{    
+.contact{
+    
   text-align: center;  
   font-weight: bold;     
   margin: 0 auto;           
-  padding: 0 20px;          
+  padding: 0 20px;          /* Adds space on left and right */
   max-width: 800px;         
-  color: #0b4066;          
+  color: #222222;           /* text color - contrast to light backgraound */
   line-height: 1.6;         
 }
 
@@ -129,43 +129,42 @@ header {
 }
 
 
-
-
-/*Bullet Points*/
 .bullet-point {
         text-align: center;  
         font-weight: 500;     
         margin: 0 auto;           
-        padding: 0 20px;          
+        padding: 0 20px;          /* Adds space on left and right */
         max-width: 800px;         
-        color: #0b4066;          
+        color: #222222;           /* text color - contrast to light backgraound */
         line-height: 1.6;         
-}
+    }
 
-.bullet-point-list ul {
-      list-style-type: disc; 
-      padding-left: 40px; 
-      margin: 10px 0; 
-}
+    .bullet-point-list ul {
+      list-style-type: disc; /* Add bullets */
+      padding-left: 40px; /* Space for bullet indentation */
+      margin: 10px 0; /* Optional: Spacing above and below the list */
+    }
     
-.bullet-point-list ul li {
-      margin: 5px 0; 
-}
+    .bullet-point-list ul li {
+      margin: 5px 0; /* Optional: Space between items */
+    }
 
-
-
-
-/*Social Media Icons*/
 .socials {
+
   text-align: center;
   font-size: 64px;
+
+
 } 
 
 .social-icon {
+  
   color: #0b4066;
   transition: color 0.2s ease;
   margin: 0 30px;
   text-decoration: none;
+  
+
 }
 
 .social-icon:hover {
@@ -175,17 +174,12 @@ header {
 
 
 
-/*Images*/
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-
-
-
-/*About Page Info*/
 .styled-hr {
   border: none;
   border-top: 1px solid black; 
@@ -196,7 +190,7 @@ img {
   font-family: Arial, sans-serif;
   background-color: transparent;
   padding: 15px;
-  max-width: 400px; 
+  max-width: 400px; /* Adjust width as needed */
   margin: 20px auto;
   border-radius: 5px;
 }
@@ -214,7 +208,7 @@ img {
 
 .business-hours li {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between; /* Align day and time on opposite sides */
   font-size: 18px;
   padding: 5px 0;
   border-bottom: 1px solid black;
@@ -225,36 +219,36 @@ img {
 }
 
 .business-hours .day {
-  color: #0b4066; 
+  color: #0b4066; /* Color for the day names */
 }
 
 .business-hours .time {
-  color: #0b4066; 
-
-
-
-/*Body and Heading*/        
-body {
-    font-family: Arial, sans-serif;
-}
-    
-H1{
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin:0px;
-    margin-top:-30px;
-    color:#0b4066;               
-    background-color: #b9cbe4;
-    font-size: 35px;
-    line-height:116px;
-    font-weight:bold;
+  color: #0b4066; /* Color for the time */
 }
 
+
+
+        
+        body {
+      font-family: Arial, sans-serif;
+    }
     
+    
+    H1{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin:0px;
+        margin-top:-30px;
+        color:#0b4066;               
+        background-color: #b9cbe4;
+        font-size: 35px;
+        line-height:116px;
+        font-weight:bold;
+ }
 
 
-/*Dropdown and Search Bar*/    
+
 .parent-container {
   display: flex;                
   flex-direction: column;                  
@@ -267,42 +261,48 @@ H1{
 .home-title {
     display: none;
     text-align: right;
-    font-size: 32px;  
+    font-size: 32px;  /* Adjust as needed */
     color: #0b4066;   
-    margin-top: 0px; 
+    margin-top: 0px; /* Add space above the title */
 }
 
-.search-bar-container {
-  display: flex;                
-  align-items: center;          
-  justify-content: center;      
-  width: 100%;                  
+ .search-bar-container {
+  display: flex;                /* Flexbox layout for horizontal alignment */
+  align-items: center;          /* Vertically align items */
+  justify-content: center;      /* Center items horizontally */                    /* Space between dropdown and search bar */
+  width: 100%;                  /* Full width */
   max-width: 850px; 
-  height: 50px;      
-  margin: 0 auto;               
-  padding: 0;                
-  background-color: transparent;    
-  border-radius: 25px;         
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  height: 50px;
+           
+  margin: 0 auto;               /* Center the container on the page */
+  padding: 0;                /* Add some padding */
+  background-color: transparent;    /* Optional: Background color */
+  border-radius: 25px;          /* Optional: Rounded edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+
   position: relative;   
   top: 200px;  
 }
 
+/* Dropdown */
 .dropdown {
   position: relative;
-  width: 275px; 
-  height: 100%; 
+  width: 275px; /* Adjust based on your design */
+  height: 100%; /* Match the parent height */
   background-color: #0b4066;
   color: white;
   display: flex;
   align-items: center;
-  border-top-left-radius: 25px; 
-  border-bottom-left-radius: 25px; 
-  border-right: none; 
+  border-top-left-radius: 25px; /* Round the top-left corner */
+  border-bottom-left-radius: 25px; /* Round the bottom-left corner */
+  border-right: none; /* Remove the right border to merge with the search bar */
   cursor: pointer;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;    
+  box-sizing: border-box;  
+
+
+  
 }
 
 .dropdown-header {
@@ -315,32 +315,34 @@ H1{
   white-space: nowrap;
   color: white;
   transition: color 0.2s ease;
+  
 }
 
 .dropdown:hover .dropdown-header {
-  color: #df7008; 
+  color: #df7008; /* Change color on hover (e.g., orange) */
 }
 
 .chevron {
-  font-size: 1rem; 
-  pointer-events: none; 
-  margin-left: -15px; 
-  display: inline-block; 
+  font-size: 1rem; /* Adjust chevron size */
+  pointer-events: none; /* Prevent interaction */
+  margin-left: -15px; /* Push chevron to the far-right */
+  display: inline-block; /* Ensure it's aligned properly */
   transition: transform 0.3s ease;
 }
 
 .chevron span {
-  font-size: 1.2rem; 
+  font-size: 1.2rem; /* Adjust size of the chevron */
   color: white;
   transition: color 0.2s ease;
 }
 
 .dropdown.active .chevron {
-  transform: rotate(180deg);  
+  transform: rotate(180deg); /* Chevron points up */
+  
 }
 
 .dropdown:hover .chevron span {
-  color: #df7008; 
+  color: #df7008; /* Change color of chevron on hover (e.g., orange) */
 }
 
 .dropdown-list {
@@ -353,14 +355,17 @@ H1{
   margin: 0;
   padding: 0;
   border-radius: 20px;
-  visibility: hidden; 
-  opacity: 0; 
-  transform: translateY(-10px); 
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; 
+  visibility: hidden; /* Initially hide the dropdown */
+  opacity: 0; /* Initially hide the dropdown (make it transparent) */
+  transform: translateY(-10px); /* Initially move the dropdown up */
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Transition for smooth animation */
   box-sizing: border-box;
 }
 
+
+
 .dropdown-list-item {
+  
   padding: 15px 15px;
   text-align: left;
   cursor: pointer;
@@ -376,22 +381,25 @@ H1{
 }
 
 .dropdown-list-item a {
-  text-decoration: none; 
-  color:  #0b4066;         
+  text-decoration: none; /* Remove underlining */
+  color:  #0b4066;         /* Set text color to black */
 }
 
 .dropdown-list-item a:hover {
-  color: #df7008; 
+  color: #df7008; /* Optional: Add a hover color for the links (green here) */
 }
 
 .dropdown.active .dropdown-list {
-  visibility: visible; 
-  opacity: 1; 
-  transform: translateY(0);
+  visibility: visible; /* Show the dropdown */
+  opacity: 1; /* Make the dropdown opaque */
+  transform: translateY(0); /* Move the dropdown to its original position */
+ 
 }
 
+
+/* Search Box */
 .search-box {
-  flex: 1;                     
+  flex: 1;                      /* Take remaining space */
   display: flex;
   align-items: center;
   height: 100%;
@@ -402,22 +410,21 @@ H1{
 
 .search-box input {
   width: 100%;  
-  height: 100%;               
-  padding: 0 20px;       
+  height: 100%;               /* Full width of container */             
+  border: none;
+  padding: 0 20px;       /* Border styling */
   font-size: 1rem;  
   outline: none; 
   box-sizing: border-box;        
 }
 
-
-
-
-/*Grey Transparent Container*/
 .container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  
 }
 
 .container form {
@@ -432,7 +439,6 @@ H1{
   padding: 20px;
   margin-top: -100px;
 }
-
 .container form h1 {
   color:  #0b4066;
   font-weight: 700;
@@ -441,7 +447,6 @@ H1{
   width: 500px;
   text-align: center;
 }
-
 .container form input {
   width: 300px;
   height: 50px;
@@ -454,22 +459,19 @@ H1{
   border-bottom: 2px solid  #0b4066;
   color:  #0b4066;
 }
-    
 .container form input::placeholder {
   color:  #0b4066;
 }
-
-.container form #lastName, .container form #mobile {
+.container form #lastName,
+.container form #mobile {
   margin-left: 20px;
 }
-
 .container form h4 {
   color:  #0b4066;
   font-weight: 300;
   width: 600px;
   margin-top: 20px;
 }
-
 .container form textarea {
   background: none;
   border: none;
@@ -484,7 +486,6 @@ H1{
   min-width: 620px;
   max-width: 620px;
 }
-
 .container form h4 {
   font-size: 20px;
   margin-right: 25px;
@@ -504,11 +505,11 @@ H1{
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  border-radius: 50%; 
+  border-radius: 50%; /* Circular checkbox */
   background-color: #fff;
   border: 2px solid #0b4066;
   cursor: pointer;
-  vertical-align: middle; 
+  vertical-align: middle; /* Align with the label text */
   transition: background-color 0.2s;
 }
 
@@ -542,6 +543,8 @@ H1{
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  
 }
 
 .container-2 form {
@@ -556,7 +559,6 @@ H1{
   padding: 20px;
   margin-top: -300px;
 }
-
 .container-2 form h1 {
   color:  #0b4066;
   font-weight: 700;
@@ -565,7 +567,6 @@ H1{
   width: 500px;
   text-align: center;
 }
-
 .container-2 form input {
   width: 300px;
   height: 50px;
@@ -578,22 +579,19 @@ H1{
   border-bottom: 2px solid  #0b4066;
   color:  #0b4066;
 }
-
 .container-2 form input::placeholder {
   color:  #0b4066;
 }
-
-.container-2 form #lastName, .container-2 form #mobile {
+.container-2 form #lastName,
+.container-2 form #mobile {
   margin-left: 20px;
 }
-
 .container-2 form h4 {
   color:  #0b4066;
   font-weight: 300;
   width: 600px;
   margin-top: 20px;
 }
-
 .container-2 form textarea {
   background: none;
   border: none;
@@ -608,7 +606,6 @@ H1{
   min-width: 620px;
   max-width: 620px;
 }
-
 .container-2 form h4 {
   font-size: 20px;
   margin-right: 25px;
@@ -628,11 +625,11 @@ H1{
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  border-radius: 50%; 
+  border-radius: 50%; /* Circular checkbox */
   background-color: #fff;
   border: 2px solid #0b4066;
   cursor: pointer;
-  vertical-align: middle; 
+  vertical-align: middle; /* Align with the label text */
   transition: background-color 0.2s;
 }
 
@@ -664,7 +661,7 @@ H1{
 
 
 
-/*Hamburger Menu*/
+
 .menu-icon {
   position: absolute;
   top: 15px;
@@ -674,15 +671,16 @@ H1{
   z-index: 2;
 }
 
+/* Menu Content */
 .menu-content {
   position: fixed;
   top: 0;
   left: -350px;
   width: 300px;
   height: 100%;
-  background-color: #b9cbe4;
+  background-color: #b0d1f2;
   color: #0b4066;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   transition: left 0.7s ease;
   padding: 40px 15px;
   z-index: 1;
@@ -692,6 +690,7 @@ H1{
   left: 0;
 }
 
+/* Menu List */
 .menu-content ul {
   list-style: none;
   padding: 0;
@@ -704,6 +703,7 @@ H1{
   cursor: pointer;
 }
 
+/* Submenu */
 .submenu {
   margin-top: 10px;
   margin-left: 30px;
@@ -720,24 +720,17 @@ H1{
   margin-left: 30px; 
 }
 
+/* Menu Hover Effects */
 .menu-content li:hover {
   color: #df7008;
 }
 
-
-
-
-/*Globe Icon*/
 .globe {
   color:#df7008;
   font-size: 40px;
   margin-top: 50px;
 }
 
-
-
-
-/* Back to Top Button*/
 #btnScroll{
   position: fixed;
   right: 15px;
