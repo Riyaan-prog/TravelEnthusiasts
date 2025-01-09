@@ -267,7 +267,19 @@ img {
 }
 
 
-
+.home-content {
+    position: absolute; 
+    top: 570px; 
+    left: 1040px;
+    transform: translateX(-50%); 
+    font-size: 28px;
+    font-weight: bold; 
+    color: #0b4066; 
+    text-align: justify;
+    max-width: 666px;
+    width: 100%;
+    white-space: normal;
+}
 
 
 .plan-text {
@@ -289,7 +301,7 @@ img {
 
 .dropdown {
     position: absolute;
-    top: 500px;
+    top: 485px;
     left: 700px;
     width: 666px; 
     height: 88px; 
