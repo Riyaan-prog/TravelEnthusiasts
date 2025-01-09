@@ -718,7 +718,8 @@ img {
 .hmenu ul li a:visited,
 .hmenu ul li a:hover,
 .hmenu ul li a:active {
-    color: #0B4066; 
+    color: #0B4066;
+    margin-left: 0.9rem;
 }
 
 .hmenu ul li ul.submenu {
