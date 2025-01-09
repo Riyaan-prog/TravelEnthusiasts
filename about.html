@@ -58,6 +58,47 @@
 
 </div>
 
+
+<div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <nav class="hmenu" id="hmenu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="has-submenu">
+                <a href="#">Destinations</a>
+                <ul class="submenu">
+                    <li><a href="#">Italy</a></li>
+                    <li><a href="#">Morocco</a></li>
+                    <li><a href="#">Philippines</a></li>
+                    <li><a href="#">UAE</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('hmenu');
+            menu.classList.toggle('active');
+        }
+
+        document.querySelectorAll('.has-submenu > a').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const submenu = item.nextElementSibling;
+                submenu.classList.toggle('show');
+            });
+        });
+    </script>
+
+    
 <script>
 
     const btnScroll = document.querySelector("#btnScroll");
