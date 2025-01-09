@@ -266,157 +266,117 @@ img {
     margin-top: 0px; /* Add space above the title */
 }
 
- .search-bar-container {
-  display: flex;                /* Flexbox layout for horizontal alignment */
-  align-items: center;          /* Vertically align items */
-  justify-content: center;      /* Center items horizontally */                    /* Space between dropdown and search bar */
-  width: 100%;                  /* Full width */
-  max-width: 850px; 
-  height: 50px;
-           
-  margin: 0 auto;               /* Center the container on the page */
-  padding: 0;                /* Add some padding */
-  background-color: transparent;    /* Optional: Background color */
-  border-radius: 25px;          /* Optional: Rounded edges */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
 
-  position: relative;   
-  top: 200px;  
-}
 
-/* Dropdown */
+
+
+
+
 .dropdown {
-  position: relative;
-  width: 275px; /* Adjust based on your design */
-  height: 100%; /* Match the parent height */
-  background-color: #0b4066;
-  color: white;
-  display: flex;
-  align-items: center;
-  border-top-left-radius: 25px; /* Round the top-left corner */
-  border-bottom-left-radius: 25px; /* Round the bottom-left corner */
-  border-right: none; /* Remove the right border to merge with the search bar */
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
-
-
-  
+    position: absolute;
+    top: 500px;
+    left: 700px;
+    width: 666px; 
+    height: 88px; 
+    background-color: #0b4066;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border-radius: 30px; 
+    cursor: pointer;
+    padding: 0 20px; 
+    box-sizing: border-box;
+    transition: background-color 0.1s ease; 
 }
+
+.dropdown:hover {
+    background-color: #0b4066; 
+}
+
 
 .dropdown-header {
-  display: inline-block;
-  align-items: center;
-  margin-right: 90px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: 500;
-  white-space: nowrap;
-  color: white;
-  transition: color 0.2s ease;
-  
+    font-size: 26px; 
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: color 0.3s ease;
 }
 
 .dropdown:hover .dropdown-header {
-  color: #df7008; /* Change color on hover (e.g., orange) */
+    color: white; 
 }
+
 
 .chevron {
-  font-size: 1rem; /* Adjust chevron size */
-  pointer-events: none; /* Prevent interaction */
-  margin-left: -15px; /* Push chevron to the far-right */
-  display: inline-block; /* Ensure it's aligned properly */
-  transition: transform 0.3s ease;
-}
-
-.chevron span {
-  font-size: 1.2rem; /* Adjust size of the chevron */
-  color: white;
-  transition: color 0.2s ease;
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem; 
+    pointer-events: none; 
+    transition: transform 0.3s ease;
 }
 
 .dropdown.active .chevron {
-  transform: rotate(180deg); /* Chevron points up */
-  
+    transform: rotate(180deg); 
 }
 
-.dropdown:hover .chevron span {
-  color: #df7008; /* Change color of chevron on hover (e.g., orange) */
-}
 
 .dropdown-list {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  list-style-type: none;
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  border-radius: 20px;
-  visibility: hidden; /* Initially hide the dropdown */
-  opacity: 0; /* Initially hide the dropdown (make it transparent) */
-  transform: translateY(-10px); /* Initially move the dropdown up */
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Transition for smooth animation */
-  box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    visibility: hidden; 
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
+
+.dropdown.active .dropdown-list {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); 
+}
 
 
 .dropdown-list-item {
-  
-  padding: 15px 15px;
-  text-align: left;
-  cursor: pointer;
-  margin-left: 5px;
-  list-style-type: none;
-  transition: margin-left 0.2s ease, color 0.2s ease;
+    padding: 15px 20px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .dropdown-list-item:hover {
-  margin-left: 0.75rem;
-  color: black;
-  border-radius: inherit;
+    background-color: #f1f1f1; 
+    color: #0b4066; 
 }
 
+
 .dropdown-list-item a {
-  text-decoration: none; /* Remove underlining */
-  color:  #0b4066;         /* Set text color to black */
+    text-decoration: none;
+    color: #0b4066;
 }
 
 .dropdown-list-item a:hover {
-  color: #df7008; /* Optional: Add a hover color for the links (green here) */
-}
-
-.dropdown.active .dropdown-list {
-  visibility: visible; /* Show the dropdown */
-  opacity: 1; /* Make the dropdown opaque */
-  transform: translateY(0); /* Move the dropdown to its original position */
- 
+    color: #df7008; 
 }
 
 
-/* Search Box */
-.search-box {
-  flex: 1;                      /* Take remaining space */
-  display: flex;
-  align-items: center;
-  height: 100%;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  overflow: hidden;
-}
 
-.search-box input {
-  width: 100%;  
-  height: 100%;               /* Full width of container */             
-  border: none;
-  padding: 0 20px;       /* Border styling */
-  font-size: 1rem;  
-  outline: none; 
-  box-sizing: border-box;        
-}
+
+
 
 .container {
   min-height: 100vh;
