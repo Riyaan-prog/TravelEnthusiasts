@@ -270,6 +270,21 @@ img {
 
 
 
+.plan-text {
+    position: absolute; 
+    top: 400px; 
+    left: 1035px; 
+    transform: translateX(-50%); 
+    font-size: 56px;
+    font-weight: bold; 
+    color: #0b4066; 
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+
+
 
 
 .dropdown {
