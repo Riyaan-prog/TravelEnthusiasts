@@ -689,6 +689,7 @@ img {
 
 .menu-content.open {
   left: 0;
+    background-color: #b0d1f2;
 }
 
 /* Menu List */
