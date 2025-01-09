@@ -659,97 +659,98 @@ img {
 }
 
 
-
-
-
-.menu-icon {
-  position: absolute;
-  top: 30px;
-  left: 15px;
-    width: 45px;
-    height: 36px;
-  cursor: pointer;
-  z-index: 2;
+.hamburger {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 100;
 }
 
-.menu-icon::before,
-.menu-icon::after,
-.menu-icon div {
-  content: "";
-  width: 40px; 
-  height: 6px; 
-  background-color: #0b4066; 
-  border-radius: 15px; 
-  margin: 5px 0; 
-  transition: all 0.5s ease; 
-
-.menu-content.open + .menu-icon {
-  top: 70px; 
+.hamburger div {
+    width: 53px;
+    height: 6px;
+    background-color: #0B4066;
+    border-radius: 30px;
+    margin-bottom: 15px;
 }
 
-
-/* Menu Content */
-.menu-content {
-  position: fixed;
-  top: 0;
-  left: -350px;
-  width: 300px;
-  height: 100%;
-  background-color: #b0d1f2;
-  color: #0b4066;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  transition: left 0.7s ease;
-  padding: 40px 15px;
-  z-index: 1;
-    text-align: center;
+.hmenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #B9CBE4;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
 }
 
-.menu-content.open {
-  left: 0;
-    background-color: #b0d1f2;
+.hmenu.active {
+    transform: translateX(0);
 }
 
-/* Menu List */
-.menu-content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.hmenu ul {
+    list-style: none;
+    padding: 120px 20px 20px;
+    margin: 0;
 }
 
-.menu-content li {
-  margin: 45px 0;
-  font-size: 24px;
-  cursor: pointer;
+.hmenu ul li {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #0B4066;
+    padding-bottom: 25px;
+}
+
+.hmenu ul li:last-child {
+    border-bottom: none; 
+}
+
+.hmenu ul li a {
+    text-decoration: none;
+    color: #0B4066;
+    font-size: 24px;
     text-transform: uppercase;
-    border-bottom: 1px solid #0b4066;
-    padding-bottom:10px;
+    font-weight: bold;
+    transition: color 0.6s ease;
 }
 
-/* Submenu */
-.submenu {
-  margin-top: 10px;
-  margin-left: 30px;
-  display: block;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease, margin-left 0.5s ease;
-  font-size: 16px;
-  list-style: circle;
+.hmenu ul li a:visited,
+.hmenu ul li a:hover,
+.hmenu ul li a:active {
+    color: #0B4066; 
 }
 
-.menu-content li:hover > .submenu {
-  max-height: 500px; 
-  margin-left: 30px; 
+.hmenu ul li ul.submenu {
+    display: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+    padding-left: 0px;
+    margin-top: -140px;
 }
 
-.menu-content li.open > .submenu{
-    max-height: 200px;
+.hmenu ul li ul.submenu li {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-bottom: none;
+    padding-bottom: 0px;
+    padding-top: 35px;
 }
 
-/* Menu Hover Effects */
-.menu-content li:hover {
-  color: #df7008;
+.hmenu ul li ul.submenu.show,
+.hmenu ul li:hover ul.submenu {
+    display: block; 
+    max-height: 310px;
+    margin-top: -140px;
 }
+
+.hmenu ul li ul.submenu li a:hover,
+.hmenu ul li ul.submenu li a:focus {
+    color: #EA830D;
+}
+
+
 
 .globe {
   color:#df7008;
