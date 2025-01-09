@@ -720,7 +720,7 @@ img {
 }
 
 .menu-content li:hover > .submenu {
-  max-height: 200px; 
+  max-height: 500px; 
   margin-left: 30px; 
 }
 
