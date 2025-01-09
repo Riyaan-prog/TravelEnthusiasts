@@ -666,7 +666,7 @@ img {
   position: absolute;
   top: 15px;
   left: 15px;
-  font-size: 26px;
+  font-size: 36px;
   cursor: pointer;
   z-index: 2;
 }
@@ -684,6 +684,7 @@ img {
   transition: left 0.7s ease;
   padding: 40px 15px;
   z-index: 1;
+    text-align: center;
 }
 
 .menu-content.open {
@@ -698,9 +699,12 @@ img {
 }
 
 .menu-content li {
-  margin: 25px 0;
-  font-size: 18px;
+  margin: 45px 0;
+  font-size: 24px;
   cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 1px solid #0b4066;
+    padding-bottom:10px;
 }
 
 /* Submenu */
@@ -718,6 +722,10 @@ img {
 .menu-content li:hover > .submenu {
   max-height: 200px; 
   margin-left: 30px; 
+}
+
+.menu-content li.open > .submenu{
+    max-height: 200px;
 }
 
 /* Menu Hover Effects */
