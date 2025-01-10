@@ -7,19 +7,25 @@
    <link rel="stylesheet" type="text/css"href="style.css">  
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
 <style>
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: 1fr 1fr;    /* Two equal rows */
     gap: 20px;
     padding: 20px;
+    height: 100vh; /* Ensure the grid takes up the full viewport height */
   }
 
   .section {
     background-color: #f9f9f9;
     padding: 20px;
     border: 1px solid #ddd;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Make sure sections fill the grid cell */
   }
 
   h4, h3 {
@@ -29,28 +35,8 @@
   p {
     color: #555;
   }
-
-  /* Custom positioning for each section */
-  .top-left {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .top-right {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .bottom-left {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .bottom-right {
-    grid-column: 2;
-    grid-row: 2;
-  }
 </style>
+
 
 </head>
 
