@@ -7,46 +7,30 @@
    <link rel="stylesheet" type="text/css"href="style.css">  
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-  <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #e0e0e0; /* Light gray background */
-    margin: 0;
-    padding: 0;
-  }
-
+<style>
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     padding: 20px;
-    height: 100vh; /* Full height of the viewport */
   }
 
   .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9;
     padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for contrast */
-    backdrop-filter: blur(10px); /* Glass effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    color: #fff; /* Text color */
-    height: 100%; /* Ensure all sections take equal space */
+    border: 1px solid #ddd;
   }
 
   h4, h3 {
-    color: #fff;
+    color: #333;
   }
 
   p {
-    color: #ccc; /* Slightly lighter text color for readability */
-    line-height: 1.6;
+    color: #555;
   }
 
+  /* Custom positioning for each section */
   .top-left {
     grid-column: 1;
     grid-row: 1;
@@ -65,43 +49,6 @@
   .bottom-right {
     grid-column: 2;
     grid-row: 2;
-  }
-
-  header h1 {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
-    margin: 0;
-  }
-
-  .menu {
-    text-align: center;
-    background-color: #444;
-    padding: 10px;
-  }
-
-  .menu ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .menu ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-
-  .menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-  }
-
-  .page-title {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 28px;
-    color: #333;
   }
 </style>
 
